@@ -1,0 +1,8 @@
+services:
+  api:
+    build: .
+    ports: ["8080:8080"]
+  web:
+    build: ./web
+    ports: ["8081:80"]
+    depends_on: [api]
