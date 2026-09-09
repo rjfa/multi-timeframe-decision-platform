@@ -1,6 +1,6 @@
 ﻿# Multi-Timeframe Decision Platform
 
-Deterministic multi-timeframe decision architecture with explicit evidence, state transitions, and reason codes. This is an engineering demonstration using synthetic dataâ€”not financial advice or a trading-performance claim.
+Deterministic multi-timeframe decision architecture with explicit evidence, state transitions, and reason codes. This is an engineering demonstration using synthetic data —not financial advice or a trading-performance claim.
 
 ## Demonstrated invariants
 
