@@ -1,11 +1,11 @@
-# Multi-Timeframe Decision Platform
+﻿# Multi-Timeframe Decision Platform
 
-Deterministic multi-timeframe decision architecture with explicit evidence, state transitions, and reason codes. This is an engineering demonstration using synthetic data—not financial advice or a trading-performance claim.
+Deterministic multi-timeframe decision architecture with explicit evidence, state transitions, and reason codes. This is an engineering demonstration using synthetic dataâ€”not financial advice or a trading-performance claim.
 
 ## Demonstrated invariants
 
 - Closed candles only: `ClosedAt <= ObservedAt <= DecidedAt`.
-- Execution (M5), Swing (H1), and Macro (D1) processors own their clocks and observations.
+- Synthetic Macro (D1), Swing (H1), and Execution (M5) events retain their own closure and observation timestamps; Macro D1 gates Swing H1 context.
 - Immutable events become expiring evidence; evidence drives an explicit `RoadmapPhase` state machine.
 - Decisions are traceable read models, never orders.
 - Duplicate and out-of-order events are rejected with reason codes.
@@ -50,3 +50,4 @@ Only fictional scenarios and simplified semantic events are included. There are 
 ## License
 
 MIT.
+
